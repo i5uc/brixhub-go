@@ -22,6 +22,7 @@ import (
 )
 
 var (
+	Version   = "dev"
 	apiKey    string
 	userAgent string
 	client    *brixhub.Client
