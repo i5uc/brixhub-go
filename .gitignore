@@ -11,7 +11,6 @@
 
 # Go
 vendor/
-go.sum
 *.test
 *.out
 coverage.txt
