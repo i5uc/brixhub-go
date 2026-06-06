@@ -1,6 +1,7 @@
 # BrixHub Go
 
 [![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://golang.org)
+[![Release](https://img.shields.io/github/v/tag/i5uc/brixhub-go?label=latest%20release)](https://github.com/i5uc/brixhub-go/releases/latest)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Official Go client library and CLI for the [BrixHub API](https://brixhub.net) â€” Search across 11+ billion documents.
@@ -35,7 +36,30 @@ Official Go client library and CLI for the [BrixHub API](https://brixhub.net) â€
 
 Register at [brixhub.site](https://brixhub.site/api-docs) to obtain your API key.
 
-### Install CLI
+### Download Binaries
+
+Binary releases are available on GitHub Releases:
+
+- Linux x64: `brixhub-linux-amd64.tar.gz`
+- Linux arm64: `brixhub-linux-arm64.tar.gz`
+- macOS x64: `brixhub-darwin-amd64.tar.gz`
+- macOS arm64: `brixhub-darwin-arm64.tar.gz`
+- Windows x64: `brixhub-windows-amd64.exe.tar.gz`
+
+Download the latest release from:
+
+```text
+https://github.com/i5uc/brixhub-go/releases/latest
+```
+
+Extract and install:
+
+```bash
+tar xzf brixhub-linux-amd64.tar.gz
+sudo mv brixhub /usr/local/bin/
+```
+
+### Install CLI from source
 
 ```bash
 go install github.com/i5uc/brixhub-go/cmd/brixhub@latest
