@@ -36,6 +36,17 @@ Un-Official Go client library and CLI for the [BrixHub API](https://brixhub.net)
 
 Register at [brixhub.site](https://brixhub.site/api-docs) to obtain your API key.
 
+### Configure with .env
+
+Copy the example env file and set your API key:
+
+```bash
+cp .env.example .env
+# then edit .env and fill in BRIXHUB_API_KEY
+```
+
+The CLI and examples automatically load `.env` when present.
+
 ### Download Binaries
 
 Binary releases are available on GitHub Releases:
@@ -79,6 +90,12 @@ Set your API key:
 export BRIXHUB_API_KEY="brix_your_api_key_here"
 ```
 
+Or pass it directly to the binary:
+
+```bash
+brixhub --api-key "brix_your_api_key_here" search --nom "Dupont" --prenom "Jean" --ville "Paris"
+```
+
 Run a search:
 
 ```bash
@@ -86,6 +103,8 @@ brixhub search --nom "Dupont" --prenom "Jean" --ville "Paris"
 ```
 
 ## CLI Usage
+
+You can pass the API key directly to the binary with `--api-key` or rely on `BRIXHUB_API_KEY`.
 
 ### Search
 
@@ -234,17 +253,17 @@ The Makefile supports building for multiple platforms:
 ### Running Examples
 
 ```bash
-# Set your API key
-export BRIXHUB_API_KEY="brix_your_key_here"
+# Copy and edit .env for local credentials
+cp .env.example .env
 
 # Run basic search example
-go run examples/basic_search.go
+go run ./examples/basic_search
 
 # Run reverse lookup example
-go run examples/reverse_lookup.go
+go run ./examples/reverse_lookup
 
 # Run account info example
-go run examples/account_info.go
+go run ./examples/account_info
 ```
 
 ## API Reference

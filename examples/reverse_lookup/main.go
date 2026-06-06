@@ -1,5 +1,5 @@
 // Example: Reverse lookup by email, phone, or IBAN
-package examples
+package main
 
 import (
 	"context"
@@ -7,10 +7,12 @@ import (
 	"log"
 	"os"
 
+	"github.com/joho/godotenv"
 	"github.com/i5uc/brixhub-go/pkg/brixhub"
 )
 
-func ReverseLookupExample() {
+func main() {
+	_ = godotenv.Load()
 	apiKey := os.Getenv("BRIXHUB_API_KEY")
 	if apiKey == "" {
 		log.Fatal("Set BRIXHUB_API_KEY environment variable")
