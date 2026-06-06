@@ -1,5 +1,5 @@
 // Example: Basic search by name and city
-package main
+package examples
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"github.com/i5uc/brixhub-go/pkg/brixhub"
 )
 
-func main() {
+func BasicSearchExample() {
 	apiKey := os.Getenv("BRIXHUB_API_KEY")
 	if apiKey == "" {
 		log.Fatal("Set BRIXHUB_API_KEY environment variable")

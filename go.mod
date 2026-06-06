@@ -1,11 +1,10 @@
 module github.com/i5uc/brixhub-go
 
 go 1.21
-go get github.com/joho/godotenv
-go mod tidy
 
 require (
 	github.com/fatih/color v1.16.0
+	github.com/joho/godotenv v1.5.1
 	github.com/spf13/cobra v1.8.0
 )
 

@@ -48,6 +48,15 @@ func (e *APIError) IsPlanLimited() bool {
 	return e.Type == ErrPlanLimited
 }
 
+// NewAPIError creates an APIError for local client-side failures
+func NewAPIError(message string) *APIError {
+	return &APIError{
+		Type:    ErrInternal,
+		Message: message,
+		Status:  0,
+	}
+}
+
 // parseError parses an error response from the API
 func parseError(resp *http.Response, body []byte) error {
 	apiErr := &APIError{

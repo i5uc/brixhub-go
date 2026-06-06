@@ -10,7 +10,6 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"os"
 	"strings"
@@ -18,7 +17,7 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/yourusername/brixhub-go/pkg/brixhub"
+	"github.com/i5uc/brixhub-go/pkg/brixhub"
 	"github.com/joho/godotenv"
 )
 

@@ -2,7 +2,10 @@
 // BrixHub is a database search platform with over 11 billion documents.
 package brixhub
 
-import "time"
+import (
+    "encoding/json"
+    "time"
+)
 
 const (
 	// BaseURL is the production API endpoint
