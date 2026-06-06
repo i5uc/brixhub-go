@@ -57,11 +57,7 @@ Binary releases are available on GitHub Releases:
 - macOS arm64: `brixhub-darwin-arm64.tar.gz`
 - Windows x64: `brixhub-windows-amd64.exe.tar.gz`
 
-Download the latest release from:
-
-```text
-https://github.com/i5uc/brixhub-go/releases/latest
-```
+Download the latest release from [GitHub Releases](https://github.com/i5uc/brixhub-go/releases/latest).
 
 Extract and install:
 
