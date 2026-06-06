@@ -5,7 +5,7 @@
 *.dll
 *.so
 *.dylib
-brixhub
+/brixhub
 /build/
 /dist/
 
