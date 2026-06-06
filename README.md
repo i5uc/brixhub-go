@@ -4,7 +4,7 @@
 [![Release](https://img.shields.io/github/v/tag/i5uc/brixhub-go?label=latest%20release)](https://github.com/i5uc/brixhub-go/releases/latest)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Official Go client library and CLI for the [BrixHub API](https://brixhub.net) — Search across 11+ billion documents.
+Un-Official Go client library and CLI for the [BrixHub API](https://brixhub.net) — Search across 11+ billion documents.
 
 ## Features
 
